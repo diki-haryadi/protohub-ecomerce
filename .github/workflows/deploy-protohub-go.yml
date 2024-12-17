@@ -8,7 +8,7 @@ on:
       - dev
 
 env:
-  TARGET_REPO: "protobuf-template-go"
+  TARGET_REPO: "protobuf-ecomerce"
 
 jobs:
   merge_job:
@@ -45,7 +45,7 @@ jobs:
       - name: Init Go Module
         run: |
           cd gen/go
-          go mod init github.com/infranyx/${{env.TARGET_REPO}}
+          go mod init github.com/diki-haryadi/${{env.TARGET_REPO}}
           go mod tidy
           cd ../..
       - name: Push To ProtoHub
@@ -54,6 +54,6 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: "gen/go"
-          destination-github-username: "infranyx"
+          destination-github-username: "diki-haryadi"
           destination-repository-name: ${{env.TARGET_REPO}}
           target-branch: main

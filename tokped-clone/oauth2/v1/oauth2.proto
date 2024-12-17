@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package golang_template.article.v1;
+package oauth2.v1;
 option go_package = "./oauth2";
 
 message CreateArticleRequest {

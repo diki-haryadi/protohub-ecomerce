@@ -38,7 +38,7 @@ ProtoHub template is a ProtoHub for storing and building Protocol Buffers (proto
 2. Clone the ProtoHub repository:
 
 ```bash
-git clone https://github.com/infranyx/protohub-template.git
+git clone https://github.com/diki-haryadi/protohub-ecomerce.git
 ```
 
 3. Navigate to the directory:
