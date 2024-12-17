@@ -6,6 +6,10 @@ on:
     branches:
       - main
       - dev
+  workflow_dispatch: # Allows manual trigger
+
+permissions:
+  contents: write
 
 env:
   TARGET_REPO: "protobuf-ecomerce"
