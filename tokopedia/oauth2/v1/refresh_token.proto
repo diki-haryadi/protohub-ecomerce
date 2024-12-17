@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package tokopedia.oauth2.v1;
-option go_package = "./oauth2.proto";
+option go_package = "tokopedia/oauth2/v1;oauth2";
 
 message RefreshTokenGrantRequest {
   string grant_type = 1;

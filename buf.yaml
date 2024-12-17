@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/diki-haryadi/protobuf-template
+name: buf.build/diki-haryadi/protobuf-ecommerce
 
 breaking:
   use:

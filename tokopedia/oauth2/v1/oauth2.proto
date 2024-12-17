@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package tokopedia.oauth2.v1;
-option go_package = "./oauth2";
+option go_package = "tokopedia/oauth2/v1;oauth2";
 
 import "tokopedia/oauth2/v1/authorization_code.proto";
 import "tokopedia/oauth2/v1/password.proto";

@@ -2,7 +2,7 @@ version: v1
 managed:
   enabled: true
   go_package_prefix:
-    default: github.com/diki-haryadi/protobuf-template
+    default: github.com/diki-haryadi/protobuf-ecommerce
     # except:
     #   - buf.build/googleapis/googleapis
 plugins:
