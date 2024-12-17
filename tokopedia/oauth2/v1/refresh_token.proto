@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package tokopedia.oauth2.v1;
+option go_package = "./oauth2";
+
+message RefreshTokenGrantRequest {
+  string grant_type = 1;
+  string refresh_token = 2;
+  string client_id = 3;
+  string client_secret = 4;
+}
+
+message RefreshTokenGrantResponse {
+  string access_token = 1;
+  int32 expires_in = 2;
+  string token_type = 3;
+  string refresh_token = 4;
+  string scope = 5;
+  string error = 6;
+  string error_description = 7;
+}
+
+service RefreshTokenService {
+  rpc RefreshTokenGrant (RefreshTokenGrantRequest) returns (RefreshTokenGrantResponse);
+}

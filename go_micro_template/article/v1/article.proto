@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package oauth2.v1;
+package go_micro_template.article.v1;
 option go_package = "./oauth2";
 
 message CreateArticleRequest {
