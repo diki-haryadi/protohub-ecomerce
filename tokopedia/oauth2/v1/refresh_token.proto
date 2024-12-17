@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package tokopedia.oauth2.v1;
-option go_package = "./oauth2";
+option go_package = "./oauth2.proto";
 
 message RefreshTokenGrantRequest {
   string grant_type = 1;
@@ -18,8 +18,4 @@ message RefreshTokenGrantResponse {
   string scope = 5;
   string error = 6;
   string error_description = 7;
-}
-
-service RefreshTokenService {
-  rpc RefreshTokenGrant (RefreshTokenGrantRequest) returns (RefreshTokenGrantResponse);
 }
