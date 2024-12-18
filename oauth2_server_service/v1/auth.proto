@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package oauth2_server_service.v1;
+option go_package = "oauth2_server_service/v1;oauth2_server_service";
+
+import "oauth2_server_service/v1/register.proto";
+import "oauth2_server_service/v1/forgot_password.proto";
+import "oauth2_server_service/v1/change_password.proto";
+import "oauth2_server_service/v1/update_username.proto";
+
+service AuthService {
+  rpc Register (RegisterRequest) returns (RegisterResponse);
+  rpc ForgotPassword (ForgotPasswordRequest) returns (ForgotPasswordResponse);
+  rpc ChangePassword (ChangePasswordRequest) returns (ChangePasswordResponse);
+  rpc UpdateUsername (UpdateUsernameRequest) returns (UpdateUsernameResponse);
+}

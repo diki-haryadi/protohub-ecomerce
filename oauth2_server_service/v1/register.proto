@@ -1,7 +1,7 @@
 syntax = "proto3";
 
-package tokopedia.auth.v1;
-option go_package = "./auth";
+package oauth2_server_service.v1;
+option go_package = "oauth2_server_service/v1;oauth2_server_service";
 
 message RegisterRequest {
   string username = 1;
@@ -12,8 +12,4 @@ message RegisterRequest {
 message RegisterResponse {
   string username = 1;
   string role = 3;
-}
-
-service RegisterService {
-  rpc Register (RegisterRequest) returns (RegisterResponse);
 }
