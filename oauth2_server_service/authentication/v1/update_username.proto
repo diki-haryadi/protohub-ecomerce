@@ -11,5 +11,5 @@ message UpdateUsernameRequest {
 }
 
 message UpdateUsernameResponse {
-  string status = 1;
+  bool status = 1;
 }
