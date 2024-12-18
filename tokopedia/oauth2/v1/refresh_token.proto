@@ -4,18 +4,19 @@ package tokopedia.oauth2.v1;
 option go_package = "tokopedia/oauth2/v1;oauth2";
 
 message RefreshTokenGrantRequest {
-  string grant_type = 1;
-  string refresh_token = 2;
+  string refresh_token = 1;
+  string scope = 2;
   string client_id = 3;
   string client_secret = 4;
 }
 
 message RefreshTokenGrantResponse {
-  string access_token = 1;
-  int32 expires_in = 2;
-  string token_type = 3;
-  string refresh_token = 4;
+  string user_id = 1;
+  string access_token = 2;
+  int32 expires_in = 3;
+  string token_type = 4;
   string scope = 5;
-  string error = 6;
-  string error_description = 7;
+  string refresh_token = 6;
+  string error = 7;
+  string error_description = 8;
 }
