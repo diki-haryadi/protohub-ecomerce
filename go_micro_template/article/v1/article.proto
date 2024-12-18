@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package go_micro_template.article.v1;
-option go_package = "./oauth2.proto";
+option go_package = "./oauth2_server_service.proto";
 
 message CreateArticleRequest {
   string name = 1;

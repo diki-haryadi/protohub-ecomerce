@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-package tokopedia.oauth2.v1;
-option go_package = "tokopedia/oauth2/v1;oauth2";
+package oauth2_server_service.v1;
+option go_package = "oauth2_server_service/v1;oauth2_server_service";
 
-message AuthorizationCodeGrantRequest {
-  string code = 1;
-  string redirect_uri = 2;
+message RefreshTokenGrantRequest {
+  string refresh_token = 1;
+  string scope = 2;
   string client_id = 3;
   string client_secret = 4;
 }
 
-message AuthorizationCodeGrantResponse {
+message RefreshTokenGrantResponse {
   string user_id = 1;
   string access_token = 2;
   int32 expires_in = 3;

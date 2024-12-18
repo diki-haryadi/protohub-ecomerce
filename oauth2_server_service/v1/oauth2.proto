@@ -1,12 +1,12 @@
 syntax = "proto3";
 
-package tokopedia.oauth2.v1;
-option go_package = "tokopedia/oauth2/v1;oauth2";
+package oauth2_server_service.v1;
+option go_package = "oauth2_server_service/v1;oauth2_server_service";
 
-import "tokopedia/oauth2/v1/authorization_code.proto";
-import "tokopedia/oauth2/v1/password.proto";
-import "tokopedia/oauth2/v1/refresh_token.proto";
-import "tokopedia/oauth2/v1/client_credential.proto";
+import "oauth2_server_service/v1/authorization_code.proto";
+import "oauth2_server_service/v1/password.proto";
+import "oauth2_server_service/v1/refresh_token.proto";
+import "oauth2_server_service/v1/client_credential.proto";
 
 service Oauth2Service {
   rpc PasswordGrant (PasswordGrantRequest) returns (PasswordGrantResponse);
