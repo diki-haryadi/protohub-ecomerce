@@ -12,6 +12,7 @@ message RegisterRequest {
 }
 
 message RegisterResponse {
-  string username = 1;
-  string role = 3;
+  string uuid =1;
+  string username = 2;
+  string role_id = 3;
 }
